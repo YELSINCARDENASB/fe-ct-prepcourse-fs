@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <meta name="description" content="Henry Security es una empresa dedicada a la protección de datos y la ciberseguridad. Ofrecemos soluciones personalizadas para proteger tu información y brindarte confianza en el mundo digital.">
+    <keyword name="keywords" content="ciberseguridad, protección de datos, Henry Security, confianza digital, soluciones personalizadas">
+    <meta name="author" content="Henry Security SAS">
+</head>
+<body>
+    <div class="cabecera">
+    <header class="header">
+        <img src="./HenryLogo.bb57fd6f.svg" alt="" class="logo">
+        <div class="hamburguesa" id="menu" onclick="toggleMenu()">
+            &#9776;
+            
+        </div>
+        <nav class="navegacion" id="menulateral">
+            <ul class="menu">
+                <a href="">Home</a>
+                <a href="">Generar contraseña</a>
+                <a href="">Caja Fuerte</a>
+                <a href="">Monitoreo de Actividad</a>
+                <a href="">Gestion de Usuarios</a>
+            </ul>
+
+        </nav>
+       
+    </header>
+    <main class="main">
+        <div class="contenedor-columnas">
+            <div class="columna">
+                <h2 class="seguridad">Seguridad Personalizada y Efectiva</h2>
+                <h1 class="Henry">Henry </h1>
+                <h1 class="Security" id="Security1">Security SAS</h1>
+                <br>
+                <p>Protegemos  tus datos, impulsamos tu <br> Confianza</p>
+                 
+            </div>
+            
+            <div class="columnaimg">
+                <img src="/C3 HTML/img.PNG" alt="">
+            </div>
+
+        </div>
+        <div>
+
+        </div>
+    </main>
+
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menulateral');
+            menu.classList.toggle('active');
+        }
+    </script>
+    
+    
+</body>
+</html>
