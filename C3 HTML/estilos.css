@@ -130,3 +130,57 @@ width: 100px;
     align-items: center;
 
 }
+
+
+.footer-contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(247, 247, 255);
+    padding: 20px 0px;
+    gap: 20px;
+    background-color: rgb(237, 237, 248);
+    
+}
+.footer-columna  .enlaces .redes-sociales{
+    display: flex;
+
+}
+.footer-columna .enlaces a {
+   text-decoration: none;
+
+}
+.footer-columna .redes-sociales a{
+   text-decoration: none;
+}
+
+footer{
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+
+.asiseguridad{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    
+}
+.cambiar{
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+
+}
+.contenedor{
+ 
+    justify-content: center;
+     text-align: center;
+    align-items: center;
+    background-color: rgb(225, 229, 240);
+     
+
+    
+}

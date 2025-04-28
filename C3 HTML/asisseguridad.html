@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div id="cabecera"></div>
+        <script>
+            fetch('cabecera.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('cabecera').innerHTML = data;
+                })
+                .catch(error => console.error('Error:', error));
+        </script>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="container">
+            <h2 class="asiseguridad">Asistente de Seguridad</h2>
+            <h5 class="cambiar">Gnerador de Contraseñas</h5>
+        </div>
+        
+         
+         
+         <div class="contenedor">
+            <label for="caracteres">Cantidad de caracteres por contraseña:</label>
+            <input type="text" id="caracteres" name="caracteres" min="1" max="20" required placeholder="Escribe la cantidad de caracteres">
+          <br>
+            <label for="caracterespecial"> ¡Incluir Caracterestes especiales?</label>
+            <input type="text" id="caracterespecial" name="caracterespecial" required placeholder="Escribe los caracteres especiales">
+            <br>
+            <label for="caracter2">Incluir caracteres Numeros?</label>
+            <input type="text" id="caracter2" name="caracter2" required placeholder="Escribe los caracteres numericos">
+            <br>
+            <label for="caracter3">Incluir caracteres Mayusculas?</label>
+            <input type="text" id="caracter3" name="caracter3" required placeholder="Escribe los caracteres mayusculas">
+            <br>
+            <button id="generarContrasena">Generar Contraseña</button>
+        </div>
+        <br>
+        <br>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div id="footer"></div>
+        <script>
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                })
+                .catch(error => console.error('Error:', error));
+        </script>
+    </footer>
+</body>
+</html>
